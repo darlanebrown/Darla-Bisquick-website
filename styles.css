@@ -1,0 +1,93 @@
+.blue {
+  color: brown;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fffaf0;
+  color: #4a2c0b;
+}
+
+h1 {
+  color: #d2691e;
+  text-align: center;
+}
+
+h2 {
+  color: green;
+}
+
+.order-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #d2691e;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.order-button:hover {
+  background-color: #b85c0d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+th, td {
+  border: 1px solid #d2691e;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #d2691e;
+  color: white;
+}
+
+form {
+  background: #fff8f0;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #d2691e;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #4a2c0b;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d2691e;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #d2691e;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #b85c0d;
+}

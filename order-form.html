@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form - Darla's Biscuits Company</title>
+
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <h1>Order Darla's Biscuits</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Biscuit Types</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Original</td>
+        <td>$4.00</td>
+      </tr>
+      <tr>
+        <td>Purple Yam</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>Garlic</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>Rosemary</td>
+        <td>$5.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form id="orderForm">
+    <label for="biscuitType">Biscuit Type</label>
+    <input type="text" id="biscuitType" name="biscuitType" placeholder="e.g. Original" required>
+
+    <label for="quantity">Quantity (how many packs?)</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+    <label for="deliveryDate">Preferred Delivery Date</label>
+    <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+    <button type="submit">Place Order</button>
+  </form>
+
+  <p style="text-align:center; margin-top:30px;">
+    <a href="index.html">← Back to Home</a>
+  </p>
+
+  <script>
+    // Simple form submission feedback (you can replace this later with real sending)
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // prevent page reload
+      
+      const type = document.getElementById('biscuitType').value;
+      const qty = document.getElementById('quantity').value;
+      const date = document.getElementById('deliveryDate').value;
+
+      if (type && qty && date) {
+        alert(`Thank you for your order!\n\nBiscuit: ${type}\nQuantity: ${qty}\nDelivery date: ${date}\n\nWe will contact you soon! 🍪`);
+        this.reset(); // clear form
+      } else {
+        alert('Please fill in all fields!');
+      }
+    });
+  </script>
+
+</body>
+</html>
